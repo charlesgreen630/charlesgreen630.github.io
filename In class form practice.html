@@ -2,6 +2,35 @@
 <html lang="en">
     <head>
         <title>Form Practice</title>
+        <style>
+            *{
+                font-family:arial,sans-serif;
+                font-size:15px;
+            }
+            
+            legend{
+                font-size:20px;
+                text-align:center;
+            }
+            form{
+                background-color:rgb(183, 208, 235);
+            }
+            select{
+                font-family:arial,sans-serif;
+            }
+            input, textarea{
+                border:0;
+                border-bottom: 2px rgb(66, 66, 66);
+            }
+            button{
+                border:1px black;
+                background: rgb(184, 184, 184);
+                font-size: 12px;
+                border-radius:12px;
+                height:20px;
+                width:35%;         
+            }
+        </style>
     </head>
     <body>
         <form action="url_for_data_reception" method="get">
@@ -13,8 +42,10 @@
                         <option value="Mrs">Mrs.</option>
                         <option value="Ms">Miss</option>
                     </select>
+                </br>
                     <label for="firstname">First Name:</label>
                     <input type="text" name="firstname" id="firstname" required/>
+                </br>
                     <label for="lastname">Last Name:</label>
                     <input type="text" name="lastname" id="lastname" required/>
                 </div>
@@ -23,14 +54,21 @@
                     <label for="email">Email:</label>
                     <input type="email" name="email" id="email" placeholder="example@domain.com" required/><br/><br/>
                     <label for="phone">Phone:</label>
-                    <input type="tel" name="phone" id="phone" required/>
+                    <input type="tel" name="phone" id="phone" required/><br/><br/>
                 </div>
-                <br/>
                 <div>
+                    <input type="radio" name="preference" id="e_mail">
+                    <label for="e_mail">E-mail Me</label>
+                </div>
+                <div>
+                    <input type="radio" name="preference" id="call">
+                    <label for="call">Call Me</label>
+                </div><br/>
+                <div>    
                     <label for="description">Brief description of your project:</label><br/>
                     <textarea id="description" rows="5" cols="50" required></textarea>
                 </div><br/>
-                <button type="submit">Submit to Devs</button>
+                <button type="submit"><strong>Submit to Devs</strong></button>
             </fieldset>
         </form>
     </body>
