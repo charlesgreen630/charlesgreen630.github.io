@@ -1,0 +1,14 @@
+body,
+button,
+input,
+select,
+textarea {
+    color: #ffffff;
+}
+pre {
+    background: #111111;
+}
+abbr,
+acronym {
+    border-bottom: 1px dotted #999999;
+}
