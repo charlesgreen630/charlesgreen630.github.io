@@ -3,12 +3,16 @@ button,
 input,
 select,
 textarea {
-    color: #ffffff;
+    color: #27303A;
 }
-pre {
-    background: #111111;
+*{
+    background-color: #A8ACAE;
 }
-abbr,
-acronym {
-    border-bottom: 1px dotted #999999;
+header{
+    font-family:'Times New Roman', Times, serif;
+    font-size: large;
+}
+article{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#30504e;
 }
