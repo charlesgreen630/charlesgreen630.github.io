@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Exercise 6.02: Device Orientation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            header{
+                text-align:center;
+            }
+            nav ul{
+                list-style:none;
+            }
+            nav li{
+                display:inline-block;
+                margin-right:5px;
+                padding-right:5px;
+                border-right:1px solid black;
+            }
+            nav li a{
+                color:black;
+                text-decoration: none;
+            }
+            nav li a:hover{
+                text-decoration:underline;
+            }
+            nav li:last-child{
+                border-right:0;
+                padding-right:0;
+                margin-right:0;
+            }
+            article, footer, nav{
+                padding:10px;
+            }
+            article h1,article p{
+                margin-bottom:10px;
+            }
+            footer{
+                background:black;
+                text-align:center;
+                color:white;
+            }
+        </style>
+        <style>
+            @media(orientation:landscape){
+                header{
+                    display:flex;
+                    align-items:center;
+                }
+                nav{
+                    margin-left:20px;
+                }
+                article{
+                    columns:100px 2;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="https://dummyimage.com/200x100/000/fff&text=Logo" alt="dummy logo" />
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Nav #1</a></li>
+                    <li><a href="">Nav #2</a></li>
+                    <li><a href="">Nav #3</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article>
+            <h1>Video Review</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus quasi labore eos omnis porro beatae tempora earum provident? Vitae laborum dolor saepe rerum corporis neque temporibus cumque voluptatum eaque doloremque!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit officiis neque provident veniam sunt eum velit fuga culpa, cum voluptate nam dolorum debitis aliquam ratione alias, facilis dolore id ipsa.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eligendi quia excepturi, laborum minus culpa placeat deserunt est error adipisci delectus dicta magnam similique quaerat a repellendus sit vel quos.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat inventore ad consectetur asperiores sint esse perspiciatis quasi. Accusantium quasi ipsa eligendi doloremque itaque minima, voluptate, nulla quis maxime debitis dicta.</p>
+        </article>
+        <footer>
+            <p>Website by Author Name</p>
+        </footer>
+    </body>
+</html>
