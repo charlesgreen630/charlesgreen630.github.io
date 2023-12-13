@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Media Query Practice</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            /* Layout rules for responsie design*/
+            /*mobile*/
+            main{
+                display:flex;
+                flex-direction:column;
+            }
+            #one{
+                background-color:yellow;
+                margin:2em;
+                padding:2em;
+            }
+            #two{
+                background-color:blue;
+                margin:2em;
+                padding:2em;
+            }
+            #three{
+                background-color:green;
+                margin:2em;
+                padding:2em;
+            }
+
+
+            /*tablet*/
+            @media screen and (min-width:768px) and (max-width:1023px)
+            {
+                #one{background-color:orange;}
+                #two{background-color:aquamarine;}
+                #three{background-color: forestgreen;}
+                article{line-height:150%;}
+            }
+
+
+            /*desktop*/
+            @media screen and (min-width:1024px)
+            {
+                main{flex-direction:row;}
+                #one{background-color: red;}
+                #two{background-color: navy;}
+                #two{color:whitesmoke}
+                #three{background-color: greenyellow;}
+                article{line-height:200%}
+            }
+        </style>      
+    </head>
+    <body>
+        <main>
+            <article id="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste vero perferendis exercitationem accusantium voluptas, accusamus, culpa deleniti debitis repellat recusandae eum magni? Error eum, consequuntur possimus voluptate ipsam quasi quas.</article>
+            <article id="two">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo nisi consectetur reiciendis iste expedita quidem vitae inventore amet omnis. Perspiciatis atque tempore quidem vero. Nesciunt fuga odit eligendi pariatur iusto.</article>
+            <article id="three">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi eveniet, eos labore nihil magnam, quibusdam ex doloremque exercitationem officia earum dicta tempore. Dignissimos qui recusandae incidunt, quo corporis officiis alias.</article>
+        </main>
+    </body>
+</html>
