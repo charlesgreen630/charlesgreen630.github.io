@@ -1,0 +1,32 @@
+@media screen and (min-width:769px)
+                {
+                .greens_pic{
+                    display:flex;
+                    padding-bottom:15px;
+                }
+                .colosseum_info{
+                    float:left;
+                    flex-wrap:wrap;
+                }
+                .colosseum_pic{
+                    margin:auto;
+                    display:flex;
+                }
+                img{
+                    margin:auto;
+                }
+                .trevi{
+                    display: flex;
+                    margin: auto;
+                }
+                .trevi_vid{
+                    text-align:center;
+                    margin:auto;
+                }
+                .navbar{
+                    display:inline;
+                }
+                .navbar a{
+                    display:inline;
+                }
+            }

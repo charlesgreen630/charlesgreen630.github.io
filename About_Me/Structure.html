@@ -1,110 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Hello! I'm Charles Green!!</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hello! I'm Charles Green!!</title>
         <style>
-            /*--mobile view--*/
             body{
                 background: linear-gradient(90deg, rgb(130, 219, 95) 0%, rgba(255,255,255,1) 50%, rgb(252, 77, 77) 100%);
-            }
+                }
             header{
                 text-align:center;
                 font-family:Arial, Helvetica, sans-serif;
-            } 
-            img{
-                padding-top:15px;
-                padding-bottom:30px;
-                margin:auto;
-                display:flex;
-
-            }   
-            .navbar{
-                margin-left:auto;
-                margin-right:auto;
-                padding:0;
-                text-align:center;
-                font-size:large;
-            }
-            .navbar a{
-                display:flex;
-                flex-direction:column;
-                padding:20px;
-            }
-            a:link{
-                color:black;
-                text-decoration:none;
-            }
-            a:visited{
-                color:rgb(63, 63, 63);
-                text-decoration:none;
-            }
-            a:hover{
-                color:black;
-                text-decoration:underline;
-            }
-            main{
-                display:flex;
-                flex-wrap: wrap;
-                font-family:Georgia, 'Times New Roman', Times, serif;
-                font-size:medium;
-            }
-            .footer{
-                margin-left:auto;
-                margin-right:auto;
-            }   
-            .footer_info{
-                display:inline-block;
-                padding:20px;
-            }
-            aside{
-                display:flex;
-                margin-right:auto;
-                margin-left:auto;
-            }
-            .video-box{
-                text-align:center;
-                margin:auto;
-            }
-            /*-desktop*/
-            @media screen and (min-width:769px)
-            {
-                aside{
-                    display: flex;
-                    margin-left: auto;
-                    margin-right: auto;
                 }
-                .video-box{
-                    text-align:center;
-                    margin:auto;
-                }
-                .navbar{
-                    display:flex;
-                    margin:auto;
-                }
-                .navbar a{
-                    text-align:center;
-                    margin:auto;
-                }
-            }
-            </style>
-    </head>
+        </style>
+        <link rel="stylesheet" href="mobile.css">
+        <link media="min-width:769px" rel="stylesheet" href="desktop.css">
+        </head>
     <body>
         <header>
             <h1>We Went to Italy!!</h1>
         </header>
-        <img src="me_and_amber.JPEG" alt="My wife and I" width="30%">
+        <div class="greens_pic">
+            <img src="me_and_amber.JPEG" alt="My wife and I" width="30%">
+        </div>
         <div class="navbar">
             <a href="https://www.touropia.com/tourist-attractions-in-italy/" target="_blank">See The Sights We Saw</a>
             <a href="https://thetourguy.com/travel-blog/italy/top-italian-foods-to-eat-in-italy/" target="_blank">Eat the Food We Ate</a>
             <a href="https://www.travelocity.com/" target="_blank">Book a Trip</a>
         </div>
-        <main>
-            <div class="img-box">
-                <img src="colosseum.JPG" alt="Roman Colosseum" width="40%">
+        <div class="colosseum">
+            <div class="colosseum_pic">
+                <img src="colosseum.JPG" alt="Roman Colosseum" width="35%">
             </div>
-            <div class="intro">
+            <div class="colosseum_info">
                 <p>Colosseum, giant amphitheatre built in Rome under the Flavian emperors. Construction of the Colosseum was begun sometime between 70 and 72 CE during the reign of Vespasian. 
                 It is located just east of the Palatine Hill, on the grounds of what was Nero’s Golden House. The artificial lake that was the centrepiece of that palace complex was drained, and the Colosseum was sited there, a decision that was as much symbolic as it was practical. 
                 Vespasian, whose path to the throne had relatively humble beginnings, chose to replace the tyrannical emperor’s private lake with a public amphitheatre that could host tens of thousands of Romans.</p>
@@ -113,15 +41,15 @@
                 Near the amphitheatre that everyone knows, there are two other areas. One was the Palatine Hill, which is basically where the emperor's home was built. The other was the Roman Forum. This space is where much of the business and political decisions were made. 
                 There was also an area that housed Julius Cesar's ashes.</p>
             </div>
-        </main>
-        <aside>
-            <figure class="video-box">
-                <video id="video-1" width="55%" controls loop autoplay><source src="fountain_vid.mp4">Your browser does not support this video</video>
+        </div>
+        <div class="trevi">
+            <figure class="trevi_vid">
+                <video id="video-1" controls loop autoplay muted width="35%"><source src="fountain_vid.mp4">Your browser does not support this video</video>
                 <figcaption>This is the famous Trevi Fountain. It is a major tourist attraction in Rome.</figcaption>
             </figure>
-        </aside>
-        <div>
-            <ul class="footer">
+        </div>
+        <footer>
+            <ul class="footer_section">
                 <li>Contact Info</li>
                     <ul class="footer_info">
                         <li>Email:charles.green630@mail.com</li>
@@ -138,6 +66,6 @@
                     </ul>
                 </li>
             </ul>
-        </div>
+        </footer>
     </body>
 </html>
