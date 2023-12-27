@@ -1,32 +1,25 @@
-@media screen and (min-width:769px)
-                {
-                .greens_pic{
-                    display:flex;
-                    padding-bottom:15px;
-                }
-                .colosseum_info{
-                    float:left;
-                    flex-wrap:wrap;
-                }
-                .colosseum_pic{
-                    margin:auto;
-                    display:flex;
-                }
-                img{
-                    margin:auto;
-                }
-                .trevi{
-                    display: flex;
-                    margin: auto;
-                }
-                .trevi_vid{
-                    text-align:center;
-                    margin:auto;
-                }
-                .navbar{
-                    display:inline;
-                }
-                .navbar a{
-                    display:inline;
-                }
-            }
+.colosseum{
+    display:grid;
+    grid-template-columns: auto auto;
+}
+.colosseum_info{
+    float:right;
+    flex-wrap:wrap;
+}
+.colosseum_pic{
+    padding-left:20%
+}
+.colosseum_info{
+    margin-right:20%;
+}
+img{
+    margin:auto;
+}
+.navbar{
+    display:flex;
+    justify-content: center;                 
+}
+.nav_links{
+    display: flex;
+    flex-direction: row;               
+}
