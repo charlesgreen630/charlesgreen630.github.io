@@ -5,18 +5,86 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hello! I'm Charles Green!!</title>
         <style>
+            /*mobile view*/
             body{
-                background: linear-gradient(90deg, rgb(130, 219, 95) 0%, rgba(255,255,255,1) 50%, rgb(252, 77, 77) 100%);
-                }
+                background: linear-gradient(90deg, rgb(160, 219, 137) 0%, rgba(255,255,255,1) 50%, rgb(248, 118, 118) 100%);
+            }
             header{
                 text-align:center;
-                font-family:Arial, Helvetica, sans-serif;
+                font-family: 'Bevan', serif;
+                font-family: 'Courgette', cursive;
+                font-family: 'Old Standard TT', serif;
+            }
+            .greens_pic{
+                margin:auto;
+                display:flex;
+            }
+            img{
+                margin:auto;
+            }   
+            .navbar ul{
+                display:flex;
+                flex-direction:column;
+                list-style:none;
+                text-align:center;
+                font-size:larger;
+                line-height: 150%;
+            }
+            .navbar a{
+                text-align:center;
+            }
+            a:link{
+                color:black;
+                text-decoration:none;
+            }
+            a:visited{
+                color:rgb(88, 88, 88);
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+            .colosseum_pic{
+                text-align: center;
+            }
+            .colosseum{
+                padding-top:30px;
+                padding-bottom:30px;
+                font-size: large;
+            }
+            .trevi{
+                text-align:center;
+            }
+            /*--desktop*/
+                @media screen and (min-width:768px){
+                .colosseum{
+                    display:grid;
+                    grid-template-columns: auto auto;
                 }
+                .colosseum_info{
+                    float:right;
+                    flex-wrap:wrap;
+                }
+                .colosseum_pic{
+                    padding-left:20%
+                }
+                .colosseum_info{
+                    margin-right:20%;
+                }
+                img{
+                    margin:auto;
+                }
+                .navbar{
+                    display:flex;
+                    justify-content: center;                 
+                }
+                .nav_links{
+                    display: flex;
+                    flex-direction: row;               
+                }
+            }
+            
         </style>
-        <link rel="stylesheet" href="mobile.css">
-        <link media="min-width:769px" rel="stylesheet" href="desktop.css">
-        </head>
-    <body>
+        <body>
         <header>
             <h1>We Went to Italy!!</h1>
         </header>
@@ -24,13 +92,15 @@
             <img src="me_and_amber.JPEG" alt="My wife and I" width="30%">
         </div>
         <div class="navbar">
-            <a href="https://www.touropia.com/tourist-attractions-in-italy/" target="_blank">See The Sights We Saw</a>
-            <a href="https://thetourguy.com/travel-blog/italy/top-italian-foods-to-eat-in-italy/" target="_blank">Eat the Food We Ate</a>
-            <a href="https://www.travelocity.com/" target="_blank">Book a Trip</a>
+            <ul class="nav_links">
+                <li><a href="https://www.touropia.com/tourist-attractions-in-italy/" target="_blank">See The Sights We Saw</a></li>
+                <li><a href="https://thetourguy.com/travel-blog/italy/top-italian-foods-to-eat-in-italy/" target="_blank">Eat the Food We Ate</a></li>
+                <li><a href="https://www.travelocity.com/" target="_blank">Book a Trip</a></li>
+            </ul>
         </div>
         <div class="colosseum">
             <div class="colosseum_pic">
-                <img src="colosseum.JPG" alt="Roman Colosseum" width="35%">
+                <img src="colosseum.JPG" alt="Roman Colosseum" width="70%">
             </div>
             <div class="colosseum_info">
                 <p>Colosseum, giant amphitheatre built in Rome under the Flavian emperors. Construction of the Colosseum was begun sometime between 70 and 72 CE during the reign of Vespasian. 
@@ -40,13 +110,14 @@
                 <p>This was my personal favorite attraction that we saw while on our trip. I had been excited to tour the Colosseum for months between booking the trip and actually going. There was so much history that I had a chance to walk on.
                 Near the amphitheatre that everyone knows, there are two other areas. One was the Palatine Hill, which is basically where the emperor's home was built. The other was the Roman Forum. This space is where much of the business and political decisions were made. 
                 There was also an area that housed Julius Cesar's ashes.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque natus, nulla quia porro aliquam eligendi hic voluptates animi delectus, dolor omnis harum blanditiis explicabo. Nulla dolorum harum placeat voluptates sequi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum eum fuga accusamus quae commodi deserunt numquam doloribus ut. Eos optio ipsum doloremque enim atque est consequatur voluptas exercitationem non cumque!</p>
             </div>
         </div>
         <div class="trevi">
-            <figure class="trevi_vid">
-                <video id="video-1" controls loop autoplay muted width="35%"><source src="fountain_vid.mp4">Your browser does not support this video</video>
+            <video id="video-1" controls loop autoplay muted width="75%"><source src="fountain_vid.mp4">Your browser does not support this video</video>
                 <figcaption>This is the famous Trevi Fountain. It is a major tourist attraction in Rome.</figcaption>
-            </figure>
+            </video>
         </div>
         <footer>
             <ul class="footer_section">
