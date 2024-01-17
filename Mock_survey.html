@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>NFL Playoffs Survey</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keyword" content="football, playoffs, NFL">
+        <meta charset="utf-8">
+        <style>
+            h1{
+                text-align: center;
+            }
+            .required::before{
+                content:"*";
+                font-weight:bold;
+                color:red;
+            }
+            @media screen and (min-width:1024px)
+            {
+                br{
+                    display:none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <H1>PLAYOFFS?!?!</H1>
+        </header>
+        <form action="#" method="get">
+            <fieldset>
+                <div>
+                    <label class="required" for="UserName">User Name:</label><br/>
+                    <input type="text" name="user" id="UserName" required/>
+                </div>
+                <div>
+                    <label class="required" for="Email">Email Address:</label><br/>
+                    <input type="text" name="address" id="Email" required/>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div>
+                    <label class="required" for="team">Favorite Team:</label><br>
+                    <input type="text" name="favorite" id="team" required/>
+                </div>
+                <p>Did your favorite team make it to the playoffs?</p>
+                <div>
+                    <input type="radio" name="clinch" id="MadePlayoffs">
+                    <label for="MadePlayoffs">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" name="clinch" id="MissedPlayoffs">
+                    <label for="MissedPlayoffs">No</label>
+                </div>
+                <p>Is your favorite team still in the playoffs?</p>
+                <div>
+                    <input type="radio" name="remaining" id="Advanced">
+                    <label for="Advanced">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" name="remaining" id="Eliminated">
+                    <label for="Eliminated">No</label>
+                </div>
+                <br/>
+                <div>    
+                    <label for="fandom">Tell us how you became a fan:</label><br/>
+                    <textarea id="fandom" rows="5" cols="50" required></textarea>
+                </div>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
