@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Robot</title>
+    <style>
+        .robo-body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .robot {
+            position: relative;
+            width: 200px;
+            height: 480px; /* Increased height to accommodate the head */
+        }
+        .robo-head, .eye-right, .eye-left, .arm, .leg, .torso {
+            position: absolute;
+            background-color: #3498db;
+        }
+        .eye-right {
+            width: 20px;
+            height: 20px;
+            background-color: #2ecc71;
+            border-radius: 50%;
+            top: 60px;
+            left: 80px;
+        }
+        .eye-left {
+            width: 20px;
+            height: 20px;
+            background-color: #2ecc71;
+            border-radius: 50%;
+            top: 60px;
+            left: 40px;
+        }
+        .arm, .leg {
+            width: 20px;
+            height: 80px;
+        }
+        .left-arm {
+            transform: rotate(-45deg);
+        }
+        .left-leg {
+            transform: rotate(45deg);
+        }
+        .right-arm {
+            transform: rotate(45deg);
+        }
+        .right-leg {
+            transform: rotate(-45deg);
+        }
+        .arm, .leg {
+            background-color: #e74c3c;
+        }
+        .left-arm {
+            top: 60px;
+            left: 20px;
+        }
+        .right-arm {
+            top: 60px;
+            left: 160px;
+        }
+        .left-leg {
+            top: 180px;
+            left: 60px;
+        }
+        .right-leg {
+            top: 180px;
+            left: 120px;
+        }
+        .robo-body {
+            width: 120px;
+            height: 160px;
+            top: 100px;
+            left: 40px;
+            background-color: #f39c12; /* Torso color */
+        }
+        .robo-head {
+            width: 100px;
+            height: 100px;
+            top: 0;
+            left: 50px;
+            background-color: #e67e22; /* Head color */
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="robot">
+        <div class="robo-head">
+            <div class="eye-left"></div>
+            <div class="eye-right"></div>
+        </div>
+        <div class="robo-body">
+            <div class="arm left-arm"></div>
+            <div class="arm right-arm"></div>
+            <div class="leg left-leg"></div>
+            <div class="leg right-leg"></div>
+        </div>
+    </div>
+</body>
+</html>
