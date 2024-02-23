@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Loan Calculator</title>
+    </head>
+    <body>
+        <h2>Loan Payment Calculator</h2>
+        <form id="loanForm">
+            <label for="principle">Loan Amount:</label>
+            <input type="number" id="principle" /><br/>
+            <label for="rate">Interest Rate:</label>
+            <input type="number" id="rate" /><br/>
+            <label for="payment">Payment Amount:</label>
+            <input type="number" id="payment" /><br/>
+            <button type="button" onclick="calculate()">Calculate:</button>
+        </form>
+        <br>
+        <div id="paymentTable"></div>
+
+        <script>
+            function calculate(){
+                var loanAmount = document.getElementById("principle").value;
+                var annualInterest = document.getElementById("rate").value;
+                var paymentAmount = document.getElementById("payment").value;
+                var monthlyInterestRate = annualInterest / 12 / 100;
+                var remainingBalance = loanAmount;
+                var paymentNumber = 1;
+                var totalInterest = 0;
+
+                var table = `<table border="1"><tr><th>Payment Number</th><th>Remaining Balance</th><tr>`;
+                
+                while (remainingBalance >0 ){
+                    var interestAmount = remainingBalance * monthlyInterestRate;
+                    if (interestAmount > paymentAmount) {
+                        alert("Warning: The amount of interest is greater than the payment amount.");
+                        return;
+                    }
+                }
+                
+            }
+        </script>
+    </body>
+</html>
