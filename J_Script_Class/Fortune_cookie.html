@@ -4,6 +4,7 @@
         <title>Fortune Cookie</title>
     </head>
     <body>
+        <button type="button" onclick="displayFortune()">What's my fortune?</button>
         <script>
             const fortune = ["Today will be a good day",
                             "Today will bring financial fortune",
@@ -16,8 +17,10 @@
                             "An old enemy will reach out",
                             "You might have to slap someone"];
 
-           let randIndex = Math.floor(Math.random()* fortune.length);
-           alert(fortune[randIndex]);
+            function displayFortune(){
+                let randIndex = Math.floor(Math.random()* fortune.length);
+                alert(fortune[randIndex]);
+            }
            </script>
     </body>
 </html>
